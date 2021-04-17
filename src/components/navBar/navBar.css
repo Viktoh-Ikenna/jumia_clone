@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+.navBar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 60px;
+    font-family: 'Noto Sans HK';
+    
+}
+.navBar .Logo{
+    width:10%;
+    margin: 3px;
+    padding:10px 50px;
+}
+.navBar .Logo img{
+    width:100%;
+    height: 100%;
+    cursor: pointer;
+}
+.navBar .input {
+    width:30%;
+    border:1px solid rgb(21, 18, 18);
+    display:flex;
+    height:30px;
+    margin: 5px;
+}
+.navBar .input span {
+display:flex;
+width:10%;
+height: 100%;
+justify-content: center;
+align-items: center;
+padding:3px 0px;
+}
+.navBar .input input {
+    width:90%;
+background: none;
+outline: 0;
+border: none;
+}
+
+.navBar .Search {
+    margin: 5px;
+    width:7%;
+text-align: center;
+background-color: orange;
+color:white;
+text-transform: uppercase;
+padding:8px 0;
+border-radius:5px;
+box-shadow: 0 0 10px 1px rgb(185, 195, 204) ;
+cursor: pointer;
+}
+.navBar .Search:hover {
+    background-color: rgb(245, 134, 15)
+}
+.navBar .Login {
+    width:8%;
+    display:flex;
+    margin: 3px;
+    cursor: pointer;
+
+    align-items: flex-end;
+}
+.navBar .Login:hover {
+    color: orange;
+}
+.navBar .help {
+    width:8%;
+    display:flex;
+    margin: 3px;
+    cursor: pointer;
+    align-items: flex-end;
+}
+.navBar .help:hover {
+    color: orange
+}.navBar .Cart {
+    width:8%;
+    display:flex;
+    margin: 3px;
+    cursor: pointer;
+    align-items: flex-end;
+}
+.navBar .Cart:hover {
+    color: orange;
+}
+.Login span,
+.help span
+,.Cart span{
+    margin:0 5px;
+    font-size: 25px;
+    
+}
+
+
+
+

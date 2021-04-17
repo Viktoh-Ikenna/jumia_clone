@@ -1,0 +1,49 @@
+.postslides {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: white;
+    margin: 10px 0;
+    height: 250px;
+    overflow: hidden;
+}
+
+.postslides h3 {
+    padding: 0px;
+    margin: 10px 15px;
+
+}
+
+.postslides .seeAll {
+    display: flex;
+    justify-content: space-between;
+
+}
+.postslides .pHolder{
+    display: flex;
+    width:fit-content;
+
+}
+.postslides .Pright{
+margin-left:97%;
+font-size: 30px;
+position: relative;
+transform: translateY(-100px);
+padding:0px;
+height: 0px;
+}
+.postslides div span{
+    opacity: 0;
+}
+
+.postslides .Pleft{
+    font-size: 30px;
+    transform: translateY(70px);
+    padding:0px;
+    height: 0px;
+    position: sticky;
+   
+}
+.Pshow div span{
+    opacity: 1;
+}

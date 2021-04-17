@@ -1,0 +1,13 @@
+.desc{
+    width:80%;
+    background-color: white;
+    padding:20px;
+    border-radius: 5px;
+}
+.desc p{
+    font-size: 12px;
+}
+.desc p a{
+    color: black;
+    font-weight: bold;
+}
