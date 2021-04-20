@@ -11,6 +11,8 @@ import { PostsSlides } from '../PostsSlides/postsSlides';
 import { CategBanner } from '../categBanner/categBanner';
 import { Desc } from '../description/desc';
 import { products } from '../productsever';
+import {MobileHome} from '../MobileHome/mobileHome';
+import { Deals } from '../Mdeal/deals';
 
 export const Home = () => {
 
@@ -23,8 +25,9 @@ export const Home = () => {
         </>
         )
     }
-    return (
+    return (<>
         <div className='home'>
+       
             <div className='HbannerH'>
                 <Category />
                 <Banner />
@@ -86,5 +89,8 @@ export const Home = () => {
 
             <Desc />
         </div>
-    )
+        <div className='mobile-home'>
+        <MobileHome />
+        </div>
+    </>)
 }

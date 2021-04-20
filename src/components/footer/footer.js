@@ -1,10 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './footer.css';
 import { BsFillEnvelopeFill } from 'react-icons/bs';
 import {FaFacebookF,FaTwitter,FaYoutube,FaInstagram} from 'react-icons/fa';
+import {IoIosArrowDropup} from 'react-icons/io';
 
 const Footer = () => {
+  
     return (<>
+        <div className='desktop'>
+        <div id='scrollTOP' onClick={()=>document.querySelector('#Top').scrollIntoView({behavior:'smooth'})}><IoIosArrowDropup/></div>
         <div className="newsLetter">
             <div className='Nlogo'>
                 <img src='https://eg.jumia.is/cms/sandbox/019/xiaomi/sis/lg-jumia.png' /></div>
@@ -87,6 +91,22 @@ const Footer = () => {
                 <div><img src='' /></div>
             </div>
         </div>
+        </div>
+        <div className='mobileFoot'>
+               <div className='MbTop'> back to top</div>
+               <hr />
+               <div className='FootContent'>
+               <div>help center</div>
+               <div>contact us</div>
+               <div> terms & condition</div>
+               <div>become a seller</div>
+               <div>report a product</div>
+               </div>
+               <hr />
+               <div className='c'>All rights reserved</div>
+
+
+            </div>
     </>
     )
 }

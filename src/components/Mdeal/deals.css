@@ -1,0 +1,44 @@
+.DealsCont {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px 0px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.DpHolder {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.MseeAll {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    background-color: aqua;
+}
+.MseeAll h3{
+    padding:0;
+    margin:0;
+    font-size: 13px;
+
+}
+.MseeAll p{
+    padding:0;
+    margin:0;
+    font-size: 10px;
+}
+.MseeAll div{
+  padding:2px 5px;
+}
+.MseeAll h4{
+    padding:0;
+    margin:2px 5px;
+    font-size: 12px;
+
+
+}

@@ -1,0 +1,29 @@
+.Mscroll {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    margin: 10px 0;
+   
+}
+
+.Mscroll h3 {
+    padding: 0px;
+    margin: 10px 15px;
+
+}
+
+.Mscroll .seeAll {
+    display: flex;
+    justify-content: space-between;
+
+}
+.Scroller{
+    width:100%;
+    overflow-x: scroll;
+}
+.Mscroll .pHolder{
+    display: flex;
+    width:fit-content;
+    
+}

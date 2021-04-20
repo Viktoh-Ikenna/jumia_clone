@@ -29,7 +29,6 @@
 }
 .CategBanner .CategBCont div:hover{
 box-shadow: 0px 0px 5px 2px rgb(230, 224, 224);
-padding:2px;
 }
 .CategBanner .CategBCont div img{
 width:60%;
@@ -40,4 +39,15 @@ border-radius: 50%;
     padding:0;
     margin: 0;
     text-align: center;
+}
+.CategBanner .CategBCont div:hover>img {
+    width: 65%;
+    margin-left: -4%;
+    transition: all .3s ease-in-out;
+}
+
+.CategBanner .CategBCont div:hover>p {
+    width: 65%;
+    font-size: 17px;
+    transition: all .3s ease-in-out;
 }

@@ -11,3 +11,28 @@
     color: black;
     font-weight: bold;
 }
+.Smore{
+    display:none;
+}
+@media only screen and (max-width:600px){
+    .desc{
+        width:90%;
+        height: 200px;
+        overflow: hidden;
+        transition: .5s all ease-in-out; 
+    }
+    .descH{
+        width:100%;
+        
+    }
+    .Smore{
+        display:flex;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        color:orange;
+        cursor: pointer;
+        background-color: white;
+        text-transform: uppercase;height: 35px;
+    }
+}

@@ -5,7 +5,17 @@
     align-items: center;
    
 }
-
+.mobile-home{
+    display:none;
+}
+@media only screen and (max-width:600px){
+    .home{
+        display:none;
+    }
+       .mobile-home{
+           display:block;
+       } 
+    }
 .HbannerH{
     width:80%;
     margin:20px 0;
@@ -90,3 +100,6 @@ background-color: white;
     width:98%;
     height: 95%;  
 }
+.Bimg:hover>img{
+    width:99.5%;
+    }

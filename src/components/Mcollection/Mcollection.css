@@ -1,0 +1,41 @@
+.MCollection{
+
+    background-color: white;
+    border-radius: 5px;
+   
+}
+.MCollection  div {
+    margin:10px 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display:flex;
+    width:100%;
+    
+}
+.MCollection  div div{
+    width:20%;
+    height: 50px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    flex-flow: column;
+    
+}
+.MCollection  div img{
+width:60%;
+height: 80%;
+border-radius: 50%;
+}
+.MCollection div p{
+    padding:0;
+    margin: 0;
+    text-align: center;
+}
+.fCat{
+    width:95%;
+    padding:5px 10px;
+
+}

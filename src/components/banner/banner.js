@@ -3,7 +3,7 @@ import './banner.css';
 import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle } from 'react-icons/io';
 
 
-const images = [
+export const images = [
     {
         src: 'https://halalwatchworld.news/wp-content/uploads/2020/12/jmia-1600.jpg',
         link: ''
