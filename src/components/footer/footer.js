@@ -1,3 +1,4 @@
+
 import React,{useState} from 'react';
 import './footer.css';
 import { BsFillEnvelopeFill } from 'react-icons/bs';
@@ -93,7 +94,7 @@ const Footer = () => {
         </div>
         </div>
         <div className='mobileFoot'>
-               <div className='MbTop'> back to top</div>
+               <div className='MbTop' onClick={()=>document.querySelector('#Top').scrollIntoView({behavior:'smooth'})}> back to top</div>
                <hr />
                <div className='FootContent'>
                <div>help center</div>

@@ -14,6 +14,11 @@
 .Smore{
     display:none;
 }
+.descH{
+   width:100%;
+   display:flex;
+   justify-content: center;
+}
 @media only screen and (max-width:600px){
     .desc{
         width:90%;
@@ -23,7 +28,8 @@
     }
     .descH{
         width:100%;
-        
+        display:flex;
+        flex-direction: column;
     }
     .Smore{
         display:flex;

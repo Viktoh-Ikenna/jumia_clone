@@ -7,7 +7,20 @@
     align-content: center;
     height: fit-content;
     font-family: 'Noto Sans HK';
-    
+    position:fixed;
+}
+.Micon a div{
+    width:20px;
+    height: 20px;
+    position: absolute;
+    background-color: orange;
+    color:white;
+    font-size:12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translate(10px,2px)
 }
 .desktopNav{
     width:100%;

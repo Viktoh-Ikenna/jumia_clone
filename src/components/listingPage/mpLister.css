@@ -1,0 +1,47 @@
+.MPlister {
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0px;
+   
+    flex-direction: column;
+}
+
+.MPHolder {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.MPlister div h3{
+    padding:0;
+    margin:10px 0;
+    font-size: 13px;
+
+}
+.pagination{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.pagination div{
+    display: flex;
+    align-items: center  
+}
+.pagination span{
+    font-size: 20px;
+
+    display: flex;
+    align-items:flex-end  
+}
+.Mlisting{
+    display:none
+}
+@media only screen and (max-width:600px){
+    .Mlisting{
+        display:block
+    }
+}

@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import './mobileHome.css';
 import { MobileBanner } from '../MobileBanner/mobileBanner';
 import { Mfeatures } from '../mobileFeatures/mfeatures';
@@ -8,8 +8,10 @@ import { Deals } from '../Mdeal/deals';
 import { Mcollection } from '../Mcollection/Mcollection';
 import { Desc } from '../description/desc';
 
+
 export const MobileHome = () => {
-    const [cut,setCut]=useState([...products].splice(0,4)); 
+    
+    const [cut, setCut] = useState([...products].splice(0, 4));
     return (
         <div className='mobilehome'>
             <MobileBanner />

@@ -1,0 +1,108 @@
+.sideBar{
+    display:none;
+}
+@media only screen and (max-width:600px){
+    .sideBar {
+        position: fixed;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.59);
+        height: 100%;
+        color: black;
+        z-index: 10;
+        display:block;
+    }
+    
+    .sideBarH {
+        z-index: 10;
+        position: relative;
+        width: 90%;
+        height: 100%;
+        background-color: white;
+        overflow-y: scroll;
+    }
+    
+    .sideBarH div {
+        width: 100%;
+    }
+    .sideBarH .SideLOGO{
+        display:flex;
+    }
+    .sideBarH .SideLOGO img {
+        width: 80%;
+        height: 70px;
+    }
+    
+    .sideBarH .SideLOGO span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sideBarH span {
+        font-size: 25px;
+        padding: 0 12px;
+        text-transform: capitalize;
+    }
+    
+    .sideBarH p {
+        width: 40%;
+        text-transform: uppercase;
+        color: orange;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    
+    .hSide a {
+        width: 55%;
+        text-align: right;
+    }
+    
+    .hSide {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    .sideBarH .chat {
+        width: 100%;
+        height: 35px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    
+    .sideBarH .account {
+        width: 100%;
+    }
+    
+    .sideBarH .account div {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 40px;
+    }
+    
+    .sideBarH .categgg div {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 40px;
+    }
+    
+    .sideBarH .services div {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 40px;
+    }
+    
+    .sss {
+        line-height: 45px;
+        text-transform: capitalize;
+        margin-left: 10px;
+    }
+}
