@@ -7,8 +7,6 @@ import {Link} from 'react-router-dom'
 const NavBar = ({set,Sshow,cart}) => {
     const [show, setShow] = useState({ cart: false, log: false });
     const [nav, setScroll] = useState();
-
- 
     return (
         <div className='navBar' >
             <div className='desktopNav' style={nav} >
@@ -47,7 +45,7 @@ const NavBar = ({set,Sshow,cart}) => {
                 <div className='MMholder' >
                     <div className='Micon' onClick={()=>set(!Sshow)}><BiMenu /></div>
                     <Link to='/' className='MLogo'> <img src='https://getcake.com/wp-content/uploads/2017/03/Jumia-logo.png' /></Link>
-                    <div className='Micon'><BiUser /></div>
+                    <div className='Micon'><Link to='/account/login'><BiUser /></Link></div>
                     <div className='Micon'><Link to='/cart'><div>{cart.map(e=>e.count).reduce((c,n)=>c+n)}</div><BiCart /></Link></div>
                 </div>
                 <div className='MMinput'>
