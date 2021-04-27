@@ -72,11 +72,11 @@
         align-items: center;
     }
     
-    .sideBarH .account {
+    .sideBarH .Saccount {
         width: 100%;
     }
     
-    .sideBarH .account div {
+    .sideBarH .Saccount div {
         width: 100%;
         display: flex;
         justify-content: left;
@@ -100,7 +100,7 @@
         height: 40px;
     }
     
-    .sss {
+    .Ssss {
         line-height: 45px;
         text-transform: capitalize;
         margin-left: 10px;

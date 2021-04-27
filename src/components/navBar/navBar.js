@@ -9,7 +9,7 @@ const NavBar = ({set,Sshow,cart}) => {
     const [nav, setScroll] = useState();
     return (
         <div className='navBar' >
-            <div className='desktopNav' style={nav} >
+            <div className='desktopNav'>
                 <div className='Logo'> <img src='https://getcake.com/wp-content/uploads/2017/03/Jumia-logo.png' />
                 </div>
                 <div className='input'><span><BiSearchAlt2 /></span><input type='text' placeholder='Search products, brands, and categories' /></div>
@@ -44,7 +44,7 @@ const NavBar = ({set,Sshow,cart}) => {
           
                 <div className='MMholder' >
                     <div className='Micon' onClick={()=>set(!Sshow)}><BiMenu /></div>
-                    <Link to='/' className='MLogo'> <img src='https://getcake.com/wp-content/uploads/2017/03/Jumia-logo.png' /></Link>
+                    <Link to='/' className='MLogo'> <img src='https://group.jumia.com/wp-content/uploads/2019/02/Jumia-group-logo.png' /></Link>
                     <div className='Micon'><Link to='/account/login'><BiUser /></Link></div>
                     <div className='Micon'><Link to='/cart'><div>{cart.map(e=>e.count).reduce((c,n)=>c+n)}</div><BiCart /></Link></div>
                 </div>

@@ -16,7 +16,7 @@ export const SideBar = ({set,Sshow}) => {
             <div className='sideBarH'>
                 <div className='SideLOGO' ><span onClick={()=>set(!Sshow)}><ImCross/></span><img src='https://getcake.com/wp-content/uploads/2017/03/Jumia-logo.png' /> </div>
                 <div className='chat'><span><RiChatPollLine /></span>Live Help </div>
-                <div className='account'>
+                <div className='Saccount'>
                 <div className='hSide'><p>my jumia account</p> <a>></a></div>
                 
                     <div className=''><span><GoPackage /></span>Oders </div>
@@ -49,9 +49,9 @@ export const SideBar = ({set,Sshow}) => {
                     <div className=''><span><MdStars /></span>jumia food </div>
                 </div>
 
-                <div className='sss'>sell on jumia </div>
-                <div className='sss'>contact us</div>
-                <div className='sss'>help center</div>
+                <div className='Ssss'>sell on jumia </div>
+                <div className='Ssss'>contact us</div>
+                <div className='Ssss'>help center</div>
             </div>
         </div>}
         </div>

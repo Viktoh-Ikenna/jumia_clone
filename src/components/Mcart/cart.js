@@ -40,7 +40,9 @@ export const Cart = ({ cartItems, set }) => {
     }
     let p = cartItems.map((e) => +e.prize * e.count);
     let z = p.reduce((e, i) => e + i);
-    console.log(cartItems)
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
     return (<div>
         <div style={{ width: '100%' }}>
             <h5 style={{ padding: 0, margin: '5px ' }}>MY CART ({cartItems.map(e => e.count).reduce((c, n) => c + n)} ITEMS)</h5>
@@ -50,8 +52,8 @@ export const Cart = ({ cartItems, set }) => {
                         <img src={p.src[0]} />
                         <div className='cartD' >
                             <div className='CCname'>{p.name}</div>
-                            <div className='CCprize'>{p.prize * p.count}</div>
-                            <del className='discount'>{p.discount * p.count}</del>
+                            <div className='CCprize'>&#8358;{numberWithCommas(p.prize * p.count)}</div>
+                            <del className='discount'>&#8358;{numberWithCommas(p.discount * p.count)}</del>
                         </div>
                     </div>
                     <div className='cartFU' >
@@ -66,7 +68,7 @@ export const Cart = ({ cartItems, set }) => {
 
         <div className='Checkout'>
             <div className='CheckoutPrize'>
-                <p>Total</p><p style={{ color: 'orange' }}>{z}</p></div>
+                <p>Total</p><p style={{ color: 'orange' }}>&#8358;{numberWithCommas(z)}</p></div>
             <div className='Cdel'>Delivery fee not included yet</div>
             <div className='CheckoutBTN'>checkout</div>
             <div className='CheckoutCALL'>call to order</div>

@@ -40,14 +40,17 @@ useEffect(()=>{
 
 },[cartItems])
 
+function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
     return (
 
         <div key={key} className='CARTpoducts'>
             {check !== true ? <><Link to={`/item/${item.id}`}>
                 <img src={item.src[0]} />
                 <div className='Cname'>{item.name}</div>
-                <div className='Cprize'>{item.prize}</div>
-                <div className='Ccancel'><del>{item.discount}</del><span>53%</span></div>
+                <div className='Cprize'>&#8358;{numberWithCommas(item.prize)}</div>
+                <div className='Ccancel'><del>&#8358;{numberWithCommas(item.discount)}</del><span>53%</span></div>
                 <div className='express'>
                     <p>jumia express</p>
                     <div>Eligible for free shipping with jumia(Lagos only )OR

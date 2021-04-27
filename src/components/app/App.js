@@ -30,7 +30,7 @@ function App() {
     src: ['https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/01/465236/1.jpg', 'https://ng.jumia.is/cms/8-18/jumia-choice/phones-tabletsv2.jpg', 'https://ng.jumia.is/cms/8-18/jumia-choice/phones-tabletsv2.jpg'],
     name: 'OK freezer in the market now',
     prize: '59000',
-    discount: '2,000,000',
+    discount: '2000000',
     description: 'this freezer is very trust worthy and reliable',
     id: 12121212,
     count: 1
@@ -45,7 +45,7 @@ function App() {
         </Route>
         <SideBar set={setShow} Sshow={show} />
         <NavBar set={setShow} Sshow={show} cart={cart} />
-        <div id='Top' style={{ height: 90 }}></div>
+        <div id='Top' style={{ height: 90 ,width:50}}></div>
         <Switch>
 
           <Route exact path='/'>

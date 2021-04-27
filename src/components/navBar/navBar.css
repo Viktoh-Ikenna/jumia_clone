@@ -8,6 +8,7 @@
     height: fit-content;
     font-family: 'Noto Sans HK';
     position:fixed;
+    width:100%;
 }
 .Micon a div{
     width:20px;
@@ -49,7 +50,9 @@
     height: 30px;
     margin: 5px;
 }
-
+.navBar .input input::placeholder{
+    font-size: 15px;
+}
 .navBar .input span {
     display: flex;
     width: 10%;
@@ -253,10 +256,12 @@
     .mobileNav .MMholder .MLogo{
         width:50%;
         height: 100%;
+        display:flex;
+        align-items: center;
     }
     .MLogo img {
-        width: 50%;
-        height: 100%;
+        width: 70%;
+        height: 80%;
        
     }
     .mobileNav .MMholder .Micon {

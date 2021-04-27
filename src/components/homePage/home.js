@@ -25,7 +25,7 @@ export const Home = () => {
         </>
         )
     }
-    return (<>
+    return (<div style={{width:'98%'}}>
         <div className='home'>
        
             <div className='HbannerH'>
@@ -92,5 +92,5 @@ export const Home = () => {
         <div className='mobile-home'>
         <MobileHome />
         </div>
-    </>)
+    </div>)
 }

@@ -82,6 +82,10 @@ useEffect(()=>{
     }
 },[cartItems])
 
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
     return (<>
         {filtered !== null ? <div>
             <div className='ITimgCont'>
@@ -92,8 +96,8 @@ useEffect(()=>{
             <div className='products_itSelf'>
                 <div className='ITname'>{filtered.name}</div>
                 <div className='ITbrand'></div>
-                <div className='ITprize'>{filtered.prize}</div>
-                <div className='ITdisc'><del>{filtered.discount}</del><span>50%</span></div>
+                <div className='ITprize'>&#8358;{numberWithCommas(filtered.prize)}</div>
+                <div className='ITdisc'><del>&#8358;{numberWithCommas(filtered.discount)}</del><span>50%</span></div>
                 <div className='ITrate'><p>(NO Rating available)</p><span><MdShare /></span><span><BsHeart /></span></div>
             </div>
             <div className='promotion'>
