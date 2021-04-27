@@ -46,7 +46,7 @@ function numberWithCommas(x) {
     return (
 
         <div key={key} className='CARTpoducts'>
-            {check !== true ? <><Link to={`/item/${item.id}`}>
+            {check !== true ? <><Link onClick={()=>document.querySelector('#Top').scrollIntoView({behavior:'smooth'})} to={`/item/${item.id}`}>
                 <img src={item.src[0]} />
                 <div className='Cname'>{item.name}</div>
                 <div className='Cprize'>&#8358;{numberWithCommas(item.prize)}</div>
@@ -64,7 +64,7 @@ function numberWithCommas(x) {
                     })
                 }}>ADD TO CART</div></>
             :<>
-                <Link to={`/item/${item.id}`}>
+                <Link onClick={()=>document.querySelector('#Top').scrollIntoView({behavior:'smooth'})} to={`/item/${item.id}`}>
                     <img src={item.src[0]} />
                     <div className='Cname'>{item.name}</div>
                     <div className='Cprize'>{item.prize}</div>

@@ -58,7 +58,7 @@ export const Cart = ({ cartItems, set }) => {
                     </div>
                     <div className='cartFU' >
                         <span className=''><IoMdHeart /></span>
-                        <span className='rr'><span onClick={()=>delet(p.id)} className=''><MdDelete /></span>REMOVE</span>
+                        <span className='rr' onClick={()=>delet(p.id)}><span  className=''><MdDelete /></span>REMOVE</span>
                         <span className='' onClick={() => subsrt(p.id)}><AiFillMinusCircle /></span>
                         {p.count}
                         <span onClick={() => add(p.id)}><AiFillPlusCircle /></span>

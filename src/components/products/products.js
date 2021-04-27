@@ -11,7 +11,7 @@ function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
     return (
-        <Link to={`/item/${item.id}`} key={key} className='poducts' style={width}>
+        <Link onClick={()=>document.querySelector('#Top').scrollIntoView({behavior:'smooth'})}to={`/item/${item.id}`} key={key} className='poducts' style={width}>
                     <img src={item.src[0]} />
                     <div className='name'>{hey}</div>
                     <div className='prize'>&#8358;{numberWithCommas(item.prize)}</div>

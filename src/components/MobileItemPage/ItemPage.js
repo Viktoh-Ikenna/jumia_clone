@@ -22,6 +22,8 @@ export const ItemPage = ({ set,cartItems }) => {
             if(e.id===fill.id){
                 setcheck(true);
                 setsetNewI(e)
+            }else{
+                setcheck(false);
             }
             })
           
@@ -77,7 +79,7 @@ useEffect(()=>{
       if(e.id===filtered.id){
           setcheck(true);
           setsetNewI(e)
-      }
+      }else{setcheck(true)}
       })
     }
 },[cartItems])
