@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef,useEffect } from 'react'
 import './cart.css';
 import { IoMdHeart } from 'react-icons/io';
 import { MdDelete } from 'react-icons/md';
@@ -11,23 +11,34 @@ import { AiFillMinusCircle, AiFillPlusCircle } from 'react-icons/ai'
 
 
 export const Cart = ({ cartItems, set }) => {
-    const [count, Setcount] = useState(1);
+    console.log(cartItems[0])
+    const [Subtotal, Settotal] = useState(null);
+    
+  
     const add = (cut) => {
-        let cc = cartItems.map((item) => {
+        if(cartItems[0]!==undefined){  
+            let cc = cartItems.map((item) => {
             if (item.id === cut) {
                 const update = { ...item, count: item.count + 1 }
                 return update;
             }
-            return item
+            return item;
+
         })
         set(cc)
     }
+    }
     const delet =(id) => {
-        let cc = cartItems.filter(e => e.id !== id);
-        set(cc);
+        if(cartItems[0]!==undefined){
+            let cc = cartItems.filter(e => e.id !== id);
+            set(cc);
+        }
+        
+      
     }
     const subsrt = (cut) => {
-        let cc = cartItems.map((item) => {
+        if(cartItems[0]!==undefined){
+            let cc = cartItems.map((item) => {
             if (item.id === cut) {
                 const update = {
                     ...item, count: item.count > 1 ? item.count - 1 : item.count
@@ -36,16 +47,28 @@ export const Cart = ({ cartItems, set }) => {
             }
             return item
         })
-        set(cc)
+        set(cc)}
     }
-    let p = cartItems.map((e) => +e.prize * e.count);
-    let z = p.reduce((e, i) => e + i);
+
+       
+useEffect(()=>{
+    if(cartItems[0]!==undefined){
+        let p = cartItems.map((e) => +e.prize * e.count)
+        let z= p.reduce((e, i) => e + i);
+         Settotal(z)
+    }else{
+        Settotal(0)
+    }
+},[cartItems])
+    
+    
     function numberWithCommas(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
     return (<div>
         <div style={{ width: '100%' }}>
-            <h5 style={{ padding: 0, margin: '5px ' }}>MY CART ({cartItems.map(e => e.count).reduce((c, n) => c + n)} ITEMS)</h5>
+            <h5 style={{ padding: 0, margin: '5px ' }}>MY CART ({cartItems[0]!==undefined?cartItems.map(e => e.count).reduce((c, n) => c + n):0} ITEMS)</h5>
+            {cartItems[0]===undefined&&<div className='empty'>Your cart is empty</div>}
             <div> {cartItems.map((p, id) => {
                 return <div key={id}>
                     <div className='cart' key={p.id}>
@@ -68,7 +91,7 @@ export const Cart = ({ cartItems, set }) => {
 
         <div className='Checkout'>
             <div className='CheckoutPrize'>
-                <p>Total</p><p style={{ color: 'orange' }}>&#8358;{numberWithCommas(z)}</p></div>
+        <p>Total</p> {Subtotal!==null&&<p style={{ color: 'orange' }}>&#8358;{numberWithCommas(Subtotal)}</p>}</div>
             <div className='Cdel'>Delivery fee not included yet</div>
             <div className='CheckoutBTN'>checkout</div>
             <div className='CheckoutCALL'>call to order</div>

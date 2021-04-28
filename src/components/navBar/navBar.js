@@ -46,7 +46,7 @@ const NavBar = ({set,Sshow,cart}) => {
                     <div className='Micon' onClick={()=>set(!Sshow)}><BiMenu /></div>
                     <Link to='/' className='MLogo'> <img src='https://group.jumia.com/wp-content/uploads/2019/02/Jumia-group-logo.png' /></Link>
                     <div className='Micon'><Link to='/account/login'><BiUser /></Link></div>
-                    <div className='Micon'><Link to='/cart'><div>{cart.map(e=>e.count).reduce((c,n)=>c+n)}</div><BiCart /></Link></div>
+                    <div className='Micon'><Link to='/cart'><div>{cart[0]!==undefined?cart.map(e=>e.count).reduce((c,n)=>c+n):0}</div><BiCart /></Link></div>
                 </div>
                 <div className='MMinput'>
                     <div className='input'><span><BiSearchAlt2 /></span><input type='text' placeholder='Search products, brands, and categories' /></div>

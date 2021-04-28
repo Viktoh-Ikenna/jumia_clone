@@ -26,15 +26,7 @@ function App() {
       document.querySelector('#scrollTOP').style.top = '';
     }
   }
-  const [cart, setCart] = useState([{
-    src: ['https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/01/465236/1.jpg', 'https://ng.jumia.is/cms/8-18/jumia-choice/phones-tabletsv2.jpg', 'https://ng.jumia.is/cms/8-18/jumia-choice/phones-tabletsv2.jpg'],
-    name: 'OK freezer in the market now',
-    prize: '59000',
-    discount: '2000000',
-    description: 'this freezer is very trust worthy and reliable',
-    id: 12121212,
-    count: 1
-  }
+  const [cart, setCart] = useState([
   ])
 
   return (
