@@ -11,22 +11,22 @@ import {
 } from "react-router-dom";
 import { AiFillMinusCircle, AiFillPlusCircle } from 'react-icons/ai'
 
-export const ItemPage = ({ set,cartItems }) => {
+export const ItemPage = ({ set, cartItems }) => {
     const params = useParams();
     const locationl = useLocation();
     const [filtered, setfilter] = useState(null);
     useEffect(() => {
         let filter = products.filter(e => e.id === +params.id);
         let [fill] = filter;
-        cartItems.map(e=>{
-            if(e.id===fill.id){
+        cartItems.map(e => {
+            if (e.id === fill.id) {
                 setcheck(true);
                 setsetNewI(e)
-            }else{
+            } else {
                 setcheck(false);
             }
-            })
-          
+        })
+
         setfilter(fill);
     }, [+params.id]);
 
@@ -34,7 +34,7 @@ export const ItemPage = ({ set,cartItems }) => {
 
     window.onscroll = () => {
         try {
-            if (document.querySelector('#ord').getBoundingClientRect().top - window.screen.availHeight+10>0) {
+            if (document.querySelector('#ord').getBoundingClientRect().top - window.screen.availHeight + 10 > 0) {
                 setOrder({ position: 'fixed', width: '100%', bottom: -5, padding: '10px 0' });
             } else {
                 setOrder({});
@@ -49,7 +49,7 @@ export const ItemPage = ({ set,cartItems }) => {
 
     const [check, setcheck] = useState(false);
     const [newI, setsetNewI] = useState(null);
-    
+
     const add = (cut) => {
         let cc = cartItems.map((iteme) => {
             if (iteme.id === cut) {
@@ -73,23 +73,23 @@ export const ItemPage = ({ set,cartItems }) => {
         })
         set(cc)
     }
-useEffect(()=>{
-    if(filtered!==null){
- cartItems.map(e=>{
-      if(e.id===filtered.id){
-          setcheck(true);
-          setsetNewI(e)
-      }else{setcheck(true)}
-      })
+    useEffect(() => {
+        if (filtered !== null) {
+            cartItems.map(e => {
+                if (e.id === filtered.id) {
+                    setcheck(true);
+                    setsetNewI(e)
+                } else { setcheck(true) }
+            })
+        }
+    }, [cartItems])
+
+
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
-},[cartItems])
-
-
-function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
     return (<>
-        {filtered !== null ? <div>
+        {filtered !== null ? <div className='ITP'>
             <div className='ITimgCont'>
                 <div>
                     {filtered.src.map(e => <div><img src={e} /></div>)}
@@ -164,17 +164,17 @@ function numberWithCommas(x) {
             <MPscroll p={products} seeAll={{ display: 'none' }} />
             <div className='ITorder' style={orderS} >
                 <div className='BTNcall'><MdCall /></div>
-                
-                {check!==true?<div className='BTNaddToCart' onClick={() => {
+
+                {check !== true ? <div className='BTNaddToCart' onClick={() => {
                     set((prev) => {
                         return [filtered, ...prev]
                     })
-                }}>add to cart</div>:<>
-                {newI===null?'loading':<div className='cartNum' >
-                    <span className='' onClick={() => subsrt(filtered.id)}><AiFillMinusCircle /></span>
-                    {newI.count}
-                    <span onClick={() => add(filtered.id)}><AiFillPlusCircle /></span>
-                </div>}</>}
+                }}>add to cart</div> : <>
+                        {newI === null ? 'loading' : <div className='cartNum' >
+                            <span className='' onClick={() => subsrt(filtered.id)}><AiFillMinusCircle /></span>
+                            {newI.count}
+                            <span onClick={() => add(filtered.id)}><AiFillPlusCircle /></span>
+                        </div>}</>}
             </div>
             <div id='ord'></div>
             <MPscroll p={products} seeAll={{ display: 'none' }} />

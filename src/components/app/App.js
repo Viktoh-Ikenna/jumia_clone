@@ -53,7 +53,7 @@ function App() {
             <Cart cartItems={cart} set={setCart} />
           </Route>
           <Route path='*'>
-            hey dude
+            sorry bhur page now available yet
          </Route>
         </Switch>
         <Footer />

@@ -76,7 +76,7 @@
         width: 100%;
     }
     
-    .sideBarH .Saccount div {
+    .sideBarH .Saccount a {
         width: 100%;
         display: flex;
         justify-content: left;
@@ -84,7 +84,7 @@
         height: 40px;
     }
     
-    .sideBarH .categgg div {
+    .sideBarH .categgg a {
         width: 100%;
         display: flex;
         justify-content: left;
@@ -92,7 +92,7 @@
         height: 40px;
     }
     
-    .sideBarH .services div {
+    .sideBarH .services a {
         width: 100%;
         display: flex;
         justify-content: left;

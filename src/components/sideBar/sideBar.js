@@ -8,6 +8,7 @@ import {GoPackage } from 'react-icons/go';
 import {MdRateReview} from 'react-icons/md';
 import {BiHeart} from 'react-icons/bi'
 import {ImCross} from 'react-icons/im'
+import {Link} from 'react-router-dom'
 
 export const SideBar = ({set,Sshow}) => {
     
@@ -19,34 +20,34 @@ export const SideBar = ({set,Sshow}) => {
                 <div className='Saccount'>
                 <div className='hSide'><p>my jumia account</p> <a>></a></div>
                 
-                    <div className=''><span><GoPackage /></span>Oders </div>
-                    <div className=''><span><MdRateReview/></span>Pending reviews</div>
-                    <div className=''><span><RiCoupon5Line /></span>Jumia coupon</div>
-                    <div className=''><span><BiHeart/></span>Saved Items </div>
+                    <Link to='/categ' onClick={()=>set(!Sshow)}  className=''><span><GoPackage /></span>Oders </Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdRateReview/></span>Pending reviews</Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><RiCoupon5Line /></span>Jumia coupon</Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><BiHeart/></span>Saved Items </Link>
                 </div>
                 <div className='categgg'>
                 <div className='hSide'><p>our categories</p> <a>see all</a></div>
-                    <div className=''><span><GiShinyApple/></span>SuperMarket </div>
-                    <div className=''><span><GiLipstick/></span>Health & beauty</div>
-                    <div className=''><span><RiHome8Line /></span>Home & Office</div>
-                    <div className=''><span><MdPhoneAndroid /></span> Phone& Tablet </div>
-                    <div className=''><span><MdDesktopMac/></span>Computing </div>
-                    <div className=''><span><GiPocketRadio /></span>Electronic</div>
-                    <div className=''><span><RiTShirt2Line /></span>Womans's Fashion</div>
-                    <div className=''><span><RiTShirt2Line /></span>Men's Fashion</div>
-                    <div className=''><span><RiGhostLine /></span>baby Products</div>
-                    <div className=''><span><GiGamepad/></span>Gaming</div>
-                    <div className=''><span><CgGym/></span>Sporting Goods</div>
-                    <div className=''><span><MdDriveEta /></span>autoMobile</div>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><GiShinyApple/></span>SuperMarket </Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><GiLipstick/></span>Health & beauty</Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><RiHome8Line /></span>Home & Office</Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdPhoneAndroid /></span> Phone& Tablet </Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdDesktopMac/></span>Computing </Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><GiPocketRadio /></span>Electronic</Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><RiTShirt2Line /></span>Womans's Fashion</Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><RiTShirt2Line /></span>Men's Fashion</Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><RiGhostLine /></span>baby Products</Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><GiGamepad/></span>Gaming</Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><CgGym/></span>Sporting Goods</Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdDriveEta /></span>autoMobile</Link>
                 </div>
                 <div className='services'>
                 <div className='hSide'><p>our services</p> <a>see all</a></div>
                 
-                    <div className=''><span><MdStars /></span>pay airtime & bills </div>
-                    <div className=''><span><MdStars /></span>Pay electricy bills</div>
-                    <div className=''><span><MdStars /></span>pay internet bills</div>
-                    <div className=''><span><MdStars /></span>buy data </div>
-                    <div className=''><span><MdStars /></span>jumia food </div>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdStars /></span>pay airtime & bills </Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdStars /></span>Pay electricy bills</Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdStars /></span>pay internet bills</Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdStars /></span>buy data </Link>
+                    <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdStars /></span>jumia food </Link>
                 </div>
 
                 <div className='Ssss'>sell on jumia </div>

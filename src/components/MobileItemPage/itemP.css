@@ -1,216 +1,224 @@
-.ITimgCont {
-    width: 100%;
-    overflow-x: scroll;
+.ITP{
+    visibility: hidden;
 }
-
-.ITimgCont div {
-    display: flex;
-    width: fit-content;
-}
-
-.ITimgCont div div {
-    width: 300px;
-    height: 250px;
-    background-color: white;
-    margin: 10px;
-    box-shadow: 0 0 10px 1px rgb(185, 195, 204);
-}
-
-.ITimgCont div img {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
-
-.products_itSelf {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: white;
-    flex-direction: column;
-    padding: 5px 0;
-    text-transform: capitalize;
-}
-
-.products_itSelf div {
-    width: 95%;
-    line-height: 23px;
-}
-
-.products_itSelf .ITname {
-    font-size: 15px
-}
-
-.products_itSelf .ITbrand {
-    font-size: 10px
-}
-
-.products_itSelf .ITprize {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.products_itSelf .ITdisc {
-    font-size: 12px;
-}
-
-.products_itSelf .ITrate {
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-}
-
-.products_itSelf .ITrate p {
-    width: 80%;
-    font-size: 13px
-}
-
-.products_itSelf .ITdisc span {
-    margin: 0 5px;
-    background-color: rgba(255, 111, 0, 0.638);
-    color: rgb(255, 111, 0);
-    font-weight: bold;
-}
-
-.promotion p {
-    padding: 0;
-    margin: 10px;
-    font-size: 13px;
-}
-
-.promotion div {
-    background-color: white;
-    padding: 5px 0
-}
-
-.promotion div div {
-    display: flex;
-    margin: 10px 0;
-    font-size: 13px;
-}
-
-.promotion div div span {
-    font-size: 25px;
-    padding: 0 8px;
-    color: orange;
-}
-
-.ITDelivery .ITDeliveryH {
-    display: flex;
-    width: 100%;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px 0px;
-}
-
-.ITDelivery p {
-    padding: 0;
-    margin: 8px 5px;
-}
-
-.ITDelivery div span {
-    font-size: 25px;
-    margin: 0px 5px;
-}
-
-.ITDelivery div a {
-    text-decoration: none;
-    color: blue;
-}
-
-.ITDelivery div p {
-    padding: 0;
-    margin: 0;
-}
-
-.ITDelivery .ITDeliveryH select {
-    width: 93%;
-    height: 30px
-}
-
-.ITDelivery div div div div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.ITDelivery div .ITMN {
-    display: flex;
-    font-size: 12px;
-    width: 93%;
-    margin: 10px 0px;
-}
-
-.C {
-    width: 93%;
-    margin: 5px 0;
-}
-
-.ITdecription p {
-    padding: 0;
-    margin: 10px 5px;
-    font-size: 14px;
-}
-
-.ITdecription .ITd {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-}
-
-.ITdecription .ITd div {
-    width: 93%;
-}
-
-.ITdecription .ITd .DTitle {
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgb(48, 46, 46)
-}
-
-.ITorder {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: white;
-    margin: 10px 0;
-    padding: 5px 0;
-}
-
-.ITorder .BTNaddToCart {
-    width: 80%;
-    text-align: center;
-    background-color: orange;
-    color: white;
-    text-transform: uppercase;
-    padding: 4px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px 1px rgb(185, 195, 204);
-    cursor: pointer;
-    font-size: 12px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ITorder .BTNcall {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    width: 10%;
-    background-color: white;
-    color: orange;
-    box-shadow: 0 0 10px 1px rgb(185, 195, 204);
-    font-size: 25px
+@media only screen and (max-width:600px){
+    .ITP{
+        visibility: visible;
+    }
+    .ITimgCont {
+        width: 100%;
+        overflow-x: scroll;
+      }
+      
+      .ITimgCont div {
+        display: flex;
+        width: fit-content;
+      }
+      
+      .ITimgCont div div {
+        width: 300px;
+        height: 250px;
+        background-color: white;
+        margin: 10px;
+        box-shadow: 0 0 10px 1px rgb(185, 195, 204);
+      }
+      
+      .ITimgCont div img {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+      }
+      
+      .products_itSelf {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding: 5px 0;
+        text-transform: capitalize;
+      }
+      
+      .products_itSelf div {
+        width: 95%;
+        line-height: 23px;
+      }
+      
+      .products_itSelf .ITname {
+        font-size: 15px
+      }
+      
+      .products_itSelf .ITbrand {
+        font-size: 10px
+      }
+      
+      .products_itSelf .ITprize {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      
+      .products_itSelf .ITdisc {
+        font-size: 12px;
+      }
+      
+      .products_itSelf .ITrate {
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+      }
+      
+      .products_itSelf .ITrate p {
+        width: 80%;
+        font-size: 13px
+      }
+      
+      .products_itSelf .ITdisc span {
+        margin: 0 5px;
+        background-color: rgba(255, 111, 0, 0.638);
+        color: rgb(255, 111, 0);
+        font-weight: bold;
+      }
+      
+      .promotion p {
+        padding: 0;
+        margin: 10px;
+        font-size: 13px;
+      }
+      
+      .promotion div {
+        background-color: white;
+        padding: 5px 0
+      }
+      
+      .promotion div div {
+        display: flex;
+        margin: 10px 0;
+        font-size: 13px;
+      }
+      
+      .promotion div div span {
+        font-size: 25px;
+        padding: 0 8px;
+        color: orange;
+      }
+      
+      .ITDelivery .ITDeliveryH {
+        display: flex;
+        width: 100%;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 0px;
+      }
+      
+      .ITDelivery p {
+        padding: 0;
+        margin: 8px 5px;
+      }
+      
+      .ITDelivery div span {
+        font-size: 25px;
+        margin: 0px 5px;
+      }
+      
+      .ITDelivery div a {
+        text-decoration: none;
+        color: blue;
+      }
+      
+      .ITDelivery div p {
+        padding: 0;
+        margin: 0;
+      }
+      
+      .ITDelivery .ITDeliveryH select {
+        width: 93%;
+        height: 30px
+      }
+      
+      .ITDelivery div div div div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .ITDelivery div .ITMN {
+        display: flex;
+        font-size: 12px;
+        width: 93%;
+        margin: 10px 0px;
+      }
+      
+      .C {
+        width: 93%;
+        margin: 5px 0;
+      }
+      
+      .ITdecription p {
+        padding: 0;
+        margin: 10px 5px;
+        font-size: 14px;
+      }
+      
+      .ITdecription .ITd {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+      }
+      
+      .ITdecription .ITd div {
+        width: 93%;
+      }
+      
+      .ITdecription .ITd .DTitle {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(48, 46, 46)
+      }
+      
+      .ITorder {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+        margin: 10px 0;
+        padding: 5px 0;
+      }
+      
+      .ITorder .BTNaddToCart {
+        width: 80%;
+        text-align: center;
+        background-color: orange;
+        color: white;
+        text-transform: uppercase;
+        padding: 4px 0;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 1px rgb(185, 195, 204);
+        cursor: pointer;
+        font-size: 12px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .ITorder .BTNcall {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 10%;
+        background-color: white;
+        color: orange;
+        box-shadow: 0 0 10px 1px rgb(185, 195, 204);
+        font-size: 25px
+      }  
 }
