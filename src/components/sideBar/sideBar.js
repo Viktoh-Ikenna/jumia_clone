@@ -18,15 +18,17 @@ export const SideBar = ({set,Sshow}) => {
                 <div className='SideLOGO' ><span onClick={()=>set(!Sshow)}><ImCross/></span><img src='https://getcake.com/wp-content/uploads/2017/03/Jumia-logo.png' /> </div>
                 <div className='chat'><span><RiChatPollLine /></span>Live Help </div>
                 <div className='Saccount'>
-                <div className='hSide'><p>my jumia account</p> <a>></a></div>
-                
+                <div className='hSide'><p>my jumia account</p> <a className='aa'>></a></div>
+                <div className='covering'>
                     <Link to='/categ' onClick={()=>set(!Sshow)}  className=''><span><GoPackage /></span>Oders </Link>
                     <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdRateReview/></span>Pending reviews</Link>
                     <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><RiCoupon5Line /></span>Jumia coupon</Link>
                     <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><BiHeart/></span>Saved Items </Link>
+                    </div>
                 </div>
                 <div className='categgg'>
-                <div className='hSide'><p>our categories</p> <a>see all</a></div>
+                <div className='hSide'><p>our categories</p> <a className='aa'>see all</a></div>
+                <div className='covering'>
                     <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><GiShinyApple/></span>SuperMarket </Link>
                     <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><GiLipstick/></span>Health & beauty</Link>
                     <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><RiHome8Line /></span>Home & Office</Link>
@@ -39,15 +41,17 @@ export const SideBar = ({set,Sshow}) => {
                     <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><GiGamepad/></span>Gaming</Link>
                     <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><CgGym/></span>Sporting Goods</Link>
                     <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdDriveEta /></span>autoMobile</Link>
+                    </div>
                 </div>
                 <div className='services'>
-                <div className='hSide'><p>our services</p> <a>see all</a></div>
-                
+                <div className='hSide'><p>our services</p> <a className='aa'>see all</a></div>
+                <div className='covering'>
                     <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdStars /></span>pay airtime & bills </Link>
                     <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdStars /></span>Pay electricy bills</Link>
                     <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdStars /></span>pay internet bills</Link>
                     <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdStars /></span>buy data </Link>
                     <Link to='/categ' onClick={()=>set(!Sshow)} className=''><span><MdStars /></span>jumia food </Link>
+               </div>
                 </div>
 
                 <div className='Ssss'>sell on jumia </div>

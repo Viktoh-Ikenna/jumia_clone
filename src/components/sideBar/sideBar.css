@@ -51,15 +51,19 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     }
     
-    .hSide a {
-        width: 55%;
+    .hSide .aa {
+        display:block;
         text-align: right;
+        background-color:white;
+        width:20%;
     }
     
     .hSide {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         width: 100%;
+        align-items: center;
+        
     }
     
     .sideBarH .chat {
@@ -76,7 +80,7 @@
         width: 100%;
     }
     
-    .sideBarH .Saccount a {
+    .sideBarH .Saccount .covering a{
         width: 100%;
         display: flex;
         justify-content: left;
@@ -84,7 +88,7 @@
         height: 40px;
     }
     
-    .sideBarH .categgg a {
+    .sideBarH .categgg .covering a {
         width: 100%;
         display: flex;
         justify-content: left;
@@ -92,7 +96,7 @@
         height: 40px;
     }
     
-    .sideBarH .services a {
+    .sideBarH .services .covering a {
         width: 100%;
         display: flex;
         justify-content: left;
